@@ -4,6 +4,6 @@ import "net/http"
 
 func NewRouter() *http.ServeMux {
 	mux := http.NewServeMux()
-	mux.HandleFunc("/slash", NewHandler().ServeHTTP)
+	mux.HandleFunc("/slack/command", NewHandler().ServeHTTP)
 	return mux
 }

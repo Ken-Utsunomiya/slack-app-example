@@ -15,7 +15,7 @@ func main() {
 	mux := NewRouter()
 
 	fmt.Println("[INFO] Server listening")
-	if err := http.ListenAndServe(":8081", mux); err != nil {
+	if err := http.ListenAndServe(":3000", mux); err != nil {
 		fmt.Println(err.Error())
 	}
 }
